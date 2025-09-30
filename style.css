@@ -1,0 +1,139 @@
+body {
+    background-color: #19171b;
+}
+
+.name {
+    color: #D3D1CE;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 401;
+    font-style: normal;
+    text-align: center;
+    width: 100%;
+    margin: 5px auto 40px auto;
+}
+
+
+.payment-methods {
+    background: #2b0307;
+    border-radius: 12px;
+    padding: 1px 15px;
+    margin: 20px auto 40px auto;  /* <-- вот правильная запись */
+    max-width: 300px;
+    width: 80%;
+    text-align: left;
+    box-shadow: 0 0 15px rgba(138, 10, 21, 0.35);
+}
+
+.payment-methods h3 {
+    color: #D3D1CE;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 16px;
+    font-size: 1.8rem;
+}
+
+.payment-methods button {
+    width: 100%;
+    background: #410a0d;                 /* цвет кнопок */
+    border: none;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: #ddd;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.payment-methods button:hover {
+    background: #e60a0a3d;
+}
+
+.avatar {
+  display: block;          /* чтобы margin сработал */
+  width: 120px;            /* размер аватарки */
+  height: 120px;
+  border-radius: 50%;      /* круглая форма */
+  object-fit: cover;       /* чтобы картинка не искажалась */
+  margin: 20px auto 0 auto; /* центрируем по горизонтали с отступом сверху */
+  border: none;            /* если не нужна рамка */
+  box-shadow: none;        /* без подсветки */
+}
+
+
+.social-buttons {
+  display: flex;
+  gap: 12px; /* расстояние между кнопками */
+  justify-content: center; /* центрируем по горизонтали */
+  margin: 20px 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.btn {
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: #ddd;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Цвета по брендам */
+.btn.telegram {
+  background-color: #0088cc;
+}
+
+.btn.telegram:hover {
+  background-color: #006699;
+}
+
+.btn.github {
+  background-color: #333;
+}
+
+.btn.github:hover {
+  background-color: #2e2e2e;
+}
+
+.btn.discord {
+  background-color: #7289da;
+}
+
+.btn.discord:hover {
+  background-color: #5b6eae;
+}
+
+
+
+
+
+
+
+/* Медиа-запрос для очень маленьких экранов */
+@media (max-width: 320px) {
+    .payment-methods {
+        padding: 12px 15px;
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .payment-methods h3 {
+        font-size: 1.4rem;
+    }
+
+    .payment-methods button {
+        font-size: 0.9rem;
+        padding: 10px 14px;
+    }
+}
